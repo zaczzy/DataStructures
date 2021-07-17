@@ -3,7 +3,7 @@ project(DataStructures)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(main
-        main.cpp BinaryTree.cpp)
+add_executable(bt
+        main.cpp)
 
 add_executable(bt_sp main2.cpp)

@@ -22,9 +22,11 @@ private:
     BTNode<T>* root;
 public:
     BinaryTree(BTNode<T>* r): root(r){};
-    void printTree();
+    void printTree() {
+
+    };
 // virtual destructor needed when class serves as base class.
-    virtual ~BinaryTree();
+    virtual ~BinaryTree() {};
 //  technically we also need
 //  copy constructor
 //  assignment operator
