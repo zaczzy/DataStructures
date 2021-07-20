@@ -5,8 +5,20 @@
 #include <iostream>
 #include <vector>
 
-using std::vector;
+void printVector(std::vector<int> v) {
+    for (auto it = v.begin(); it != v.end(); it++) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+}
 int main() {
-    vector<int> v;
+    std::vector<int> v {1,2,3};
+    std::vector<int> copy;
+    printVector(copy);
+    copy = v;
+    printVector(v);
+    printVector(copy);
+    v.insert(v.end(), copy.begin(), copy.end());
+    printVector(v);
 }
 
